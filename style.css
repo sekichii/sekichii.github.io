@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000b14;
+    color: #dfdeda;
+    font-family: 'JetBrains Mono';
+    overflow: hidden;
+}
+
+a {
+    color: #dfdeda;
+}
+
+a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#lang { background-color: #021a38; }
+
+#language_button:hover {
+    cursor: pointer;
+}
+
+#language_button {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.button, h1, #language_button {
+    user-select: none;
+    text-decoration: none;
+}
+
+#buttons {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+#title, #buttons {
+    margin: auto;
+    width: 80%;
+    text-align: center;
+}
+
+#about_me_div {
+    margin: 10px 10px 10px 0px;
+    width: calc(100% - 80px);
+    height: calc(100% - 40px); 
+    box-shadow: 0 0 10px #041b38;
+    border-radius: 10px;
+    background-color: #000b14bb;
+    backdrop-filter: blur(5px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    transition: visibility 0s, opacity 0.5s linear;
+}
