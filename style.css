@@ -16,7 +16,10 @@ a:hover {
     cursor: pointer;
 }
 
-#lang { background-color: #041b38; }
+#lang { 
+    background-color: #dfdeda; 
+    color: #000b14;
+}
 
 #language_button:hover {
     cursor: pointer;
