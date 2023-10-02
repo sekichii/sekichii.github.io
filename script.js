@@ -46,14 +46,12 @@ function language_change(event) {
         language_button.innerHTML = "<span id='lang'>HU</span>EN";
 
         past_projects.innerHTML = "Előző projektek";
-        my_blogs.innerHTML = "Blogjaim";
         about_me.innerHTML = "Én rólam";
         isEnglish = false;
     } else {
         language_button.innerHTML = "HU<span id='lang'>EN</span>";
 
         past_projects.innerHTML = "Past projects";
-        my_blogs.innerHTML = "My blogs";
         about_me.innerHTML = "About me";
         isEnglish = true;
     }
