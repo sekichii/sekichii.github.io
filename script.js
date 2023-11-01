@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
     about_me_div.style.opacity = "0";
 
     const title = document.getElementById("title");
-    const titleText = "Benih.";
+    const titleText = "Seki";
 
     let i = 0;
     const typingSpeed = 50; 
