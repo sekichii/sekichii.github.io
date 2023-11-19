@@ -13,14 +13,14 @@ document.addEventListener("DOMContentLoaded", function() {
     about_me_div.style.opacity = "0";
 
     const title = document.getElementById("title");
-    const titleText = "Seki";
+    const titleText = "Sekichi";
 
     let i = 0;
     const typingSpeed = 50; 
 
     function typeText() {
         if (i < titleText.length) {
-            title.innerHTML = "<h1>B" + titleText.substring(1, i+1) + "</h1>";
+            title.innerHTML = "<h1>S" + titleText.substring(1, i+1) + "</h1>";
             i++;
             setTimeout(typeText, typingSpeed);
         }
