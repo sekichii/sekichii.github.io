@@ -9,6 +9,13 @@ body {
 }
 
 #index_body {
+    margin: 0;
+    padding: 0;
+    background-color: #000b14;
+    color: #dfdeda;
+    font-family: 'JetBrains Mono';
+    transition: background-color 0.125s linear, color 0.15s linear;
+    user-select: none;
     overflow: hidden;
 }
 
