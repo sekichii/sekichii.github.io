@@ -7,18 +7,32 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
     <link href='https://fonts.googleapis.com/css?family=JetBrains Mono' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
-<body>
-    <div id="language_button" onclick="language_change(event)">HU<span id='lang'>EN</span></div>
+<body id="index_body">
+    <div id="color_button" onclick="color_change(event)">LGT<span id='color_bg'>DRK</span></div>
+    <div style="margin: auto; width: fit-content;"><img id="profile" src="src/profile.png" alt="profile picture"></div>
     <div id="title"><h1>S</h1></div>
     <div id="buttons">
-        <a id="about_me" class="button" onclick="about_me_page(event)">About me</a>
-        <a id="past_projects" class="button" href="https://github.com/sekichii">Past projects</a>
+        <div class="button_centerer">
+            <div class="double_slash_container">
+                <p class="double_slash">//</p>
+                <a id="about_me" class="button" onclick="about_me_page(event)">about me</a>
+            </div>
+            <div class="double_slash_container">
+                <p class="double_slash">//</p>
+                <a id="past_projects" class="button" href="https://github.com/sekichii">past projects</a>
+            </div>
+            <div class="double_slash_container">
+                <p class="double_slash">//</p>
+                <a id="bot_dev" class="button" href="bot_dev.html">bot development</a>
+            </div>
+        </div>
     </div>
 
     <div id="about_me_div">
         <a id="back" class="button" onclick="about_me_page(event)">Go back</a>
-        <h2>Hi, I'm Benett, aka Seki or Sekichi.</h2>
+        <h2>Hi, I'm Shina, but I also go by Sekichi.</h2>
         <p>I am a student in IT learning web development, game development, and 3d modeling. 
             My main programming languages are C#, HTML+CSS+JS, and Python.
         </p>

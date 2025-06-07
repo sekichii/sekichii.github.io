@@ -1,19 +1,26 @@
-var isEnglish = true;
+var isDark = true;
 var isHidden = true;
 var about_me;
-var language_button;
+var color_button;
 var about_me_div;
+var color_bg;
+
+const light_color = "#dfdeda";
+const dark_color = "#000b14"
+const dark_slash = "#041b38";
+const light_slash = "#ff5733";
 
 document.addEventListener("DOMContentLoaded", function() {
     about_me = document.getElementById("about_me");
-    language_button = document.getElementById("language_button");
+    color_button = document.getElementById("color_button");
 
     about_me_div = document.getElementById("about_me_div");
     about_me_div.style.visibility = "hidden";
     about_me_div.style.opacity = "0";
+    color_bg = document.getElementById("color_bg");
 
     const title = document.getElementById("title");
-    const titleText = "Sekichi";
+    const titleText = "Shina";
 
     let i = 0;
     const typingSpeed = 50; 
@@ -31,28 +38,38 @@ document.addEventListener("DOMContentLoaded", function() {
 
 function about_me_page(event) {
     if (isHidden) {
-        about_me_div.style.visibility = "visible";
-        about_me_div.style.opacity = "1";
+        $("#about_me_div").css("visibility", "visible");
+        $("#about_me_div").css("opacity", 1);
         isHidden = false;
     } else {
-        about_me_div.style.visibility = "hidden";
-        about_me_div.style.opacity = "0";
+        $("#about_me_div").css("visibility", "hidden");
+        $("#about_me_div").css("opacity", 0);
         isHidden = true;
     }
 }
 
-function language_change(event) {
-    if (isEnglish) {
-        language_button.innerHTML = "<span id='lang'>HU</span>EN";
 
-        past_projects.innerHTML = "Előző projektek";
-        about_me.innerHTML = "Én rólam";
-        isEnglish = false;
+function color_change(event) {
+    if (isDark) {
+        color_button.innerHTML = "<span id='color_bg'>LGT</span>DRK";
+        $("#color_bg").css("background-color", light_slash);
+        $("#color_bg").css("color", light_color);
+        $("body").css("background-color", light_color);
+        $("body").css("color", dark_color);
+        $(".double_slash").css("color", light_slash);
+        $("a").css("color", dark_color);
+
+        isDark = false;
     } else {
-        language_button.innerHTML = "HU<span id='lang'>EN</span>";
+        color_button.innerHTML = "LGT<span id='color_bg'>DRK</span>";
+        $("#color_bg").css("background-color", light_color);
+        $("#color_bg").css("color", dark_color);
+        $("body").css("background-color", dark_color);
+        $("body").css("color", light_color);
+        $(".double_slash").css("color", dark_slash);
+        $("a").css("color", light_color);
 
-        past_projects.innerHTML = "Past projects";
-        about_me.innerHTML = "About me";
-        isEnglish = true;
+
+        isDark = true;
     }
 }

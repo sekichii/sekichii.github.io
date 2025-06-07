@@ -4,6 +4,11 @@ body {
     background-color: #000b14;
     color: #dfdeda;
     font-family: 'JetBrains Mono';
+    transition: background-color 0.125s linear, color 0.15s linear;
+    user-select: none;
+}
+
+#index_body {
     overflow: hidden;
 }
 
@@ -16,16 +21,44 @@ a:hover {
     cursor: pointer;
 }
 
-#lang { 
+.double_slash {
+    color: #041b38;
+    margin: 0;
+}
+
+.double_slash_container {
+    display: flex;
+    flex-direction: row;
+}
+
+.button_centerer {
+    margin: auto;
+}
+
+#profile {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 10px auto 10px auto;
+    box-shadow: 0px 0px 4px 4px #dfdeda;
+}
+
+#color_bg { 
     background-color: #dfdeda; 
     color: #000b14;
 }
 
-#language_button:hover {
+#color_button:hover {
     cursor: pointer;
 }
 
-#language_button {
+#color_button {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#back_button {
+    float: right;
     margin-top: 10px;
     margin-left: 10px;
 }
@@ -39,6 +72,8 @@ a:hover {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
+    margin: auto;
+    width: min-content;
 }
 
 #title, #buttons {
@@ -62,3 +97,4 @@ a:hover {
     padding: 20px;
     transition: visibility 0s, opacity 0.5s linear;
 }
+
