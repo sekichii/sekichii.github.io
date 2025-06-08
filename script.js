@@ -58,6 +58,10 @@ function color_change(event) {
         $("body").css("color", dark_color);
         $(".double_slash").css("color", light_slash);
         $("a").css("color", dark_color);
+        $(".slidey").css("background-color", light_color);
+        $(".slidey .slidey-line").css("color", light_slash);
+        $(".highlight").css("background-color", dark_color);
+        $(".highlight").css("color", light_slash);
 
         isDark = false;
     } else {
@@ -68,8 +72,12 @@ function color_change(event) {
         $("body").css("color", light_color);
         $(".double_slash").css("color", dark_slash);
         $("a").css("color", light_color);
-
+        $(".slidey").css("background-color", dark_color);
+        $(".slidey .slidey-line").css("color", dark_slash);
+        $(".highlight").css("background-color", light_slash);
+        $(".highlight").css("color", dark_color);
 
         isDark = true;
     }
 }
+

@@ -9,33 +9,92 @@
     <link href='https://fonts.googleapis.com/css?family=JetBrains Mono' rel='stylesheet'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
-<body id="index_body">
-    <div id="color_button" onclick="color_change(event)">LGT<span id='color_bg'>DRK</span></div>
-    <div style="margin: auto; width: fit-content;"><img id="profile" src="src/profile.png" alt="profile picture"></div>
-    <div id="title"><h1>S</h1></div>
-    <div id="buttons">
-        <div class="button_centerer">
-            <div class="double_slash_container">
-                <p class="double_slash">//</p>
-                <a id="about_me" class="button" onclick="about_me_page(event)">about me</a>
+<body>
+    <div>
+        <div id="color_button" onclick="color_change(event)">LGT<span id='color_bg'>DRK</span></div>
+        <div id="top_part">
+            <div id="profile_div">
+                <div style="margin: auto; width: fit-content;"><img id="profile" src="src/profile.png" alt="profile picture"></div>
+                <div id="title"><h3>Shina</h3></div>
             </div>
-            <div class="double_slash_container">
-                <p class="double_slash">//</p>
-                <a id="past_projects" class="button" href="https://github.com/sekichii">past projects</a>
-            </div>
-            <div class="double_slash_container">
-                <p class="double_slash">//</p>
-                <a id="bot_dev" class="button" href="bot_dev.html">bot development</a>
+            <div id="buttons">
+                <div class="button_centerer">
+                    <!--a id="about_me" class="button" onclick="about_me_page(event)"><span class="double_slash">//</span>about me</a><br-->
+                    <a id="past_projects" class="button" href="https://github.com/sekichii"><span class="double_slash">//</span>past projects</a><br>
+                    <a id="bot_dev" class="button" href="#header"><span class="double_slash">//</span>bot development</a>
+                </div>
             </div>
         </div>
     </div>
 
-    <div id="about_me_div">
-        <a id="back" class="button" onclick="about_me_page(event)">Go back</a>
-        <h2>Hi, I'm Shina, but I also go by Sekichi.</h2>
-        <p>I am a student in IT learning web development, game development, and 3D modeling. 
-            My main programming languages are C#, HTML+CSS+JS, and Python.
-        </p>
+    <div class="slidey" id="about_me">
+        <h3><span class="double_slash">//</span>about me <span class="gray-text">- a short qna</h3>
+        <ul>
+            <li>
+                <span class="double_slash">//</span>hey! who're you??
+                <p>yo! my name is <span class="highlight">shina</span> and I'm a student currently studying computer science!</p>
+            </li>
+            <li>
+                <span class="double_slash">//</span>where are you from?
+                <p>I am from smack right in the middle of <span class="highlight">europe, hungary!</span></p>
+            </li>
+            <li>
+                <span class="double_slash">//</span>what are your hobbies?
+                <p>I like reading <span class="highlight">comics</span> and also sleeping! and when I am not doing that, i am probably <span class="highlight">deep into coding!</span></p>
+            </li>
+        </ul>
+    </div>
+
+    <div class="slidey" id="header">
+        <hr class="slidey-line">
+        <h3><span class="double_slash">//</span>bot development services</h3>
+        <p>I offer <span class="highlight">bot development services</span> for both <span class="highlight">discord and telegram</span>, offering a wide range of services to meet your needs! I can tailor the bot to your specific needs, ensuring it meets your unique requirements. I also provide ongoing <span class="highlight">maintenance and support</span> to ensure your bot is always up-to-date and running smoothly. I also can help with <span class="highlight">web development</span> for your bot or even just a portfolio site!</p>
+        <h3><span class="double_slash">//</span>why pick me?</h3>
+        <p>Here are a few reasons <span class="highlight">why you should choose me</span> for your bot development needs:</p>
+
+    </div>
+    <div class="slidey" id="s1">
+        <hr class="slidey-line">
+        <h3><span class="double_slash">//</span>flexibility <span class="gray-text">- does what it needs to do</span></h3>
+        <p>I always focus on <span class="highlight">flexibility</span> and <span class="highlight">customization</span> to ensure your bot meets your needs. I take my time discussing with a person what a bot <span class="highlight">should do</span> and how it <span class="highlight">should look</span>, so please think about what you want your bot to do and how you want it to look <span class="highlight">in advance.</span></p>
+
+        <h3>Here is what you should think about in advance:</h3>
+        <ul>
+            <li>What specific tasks or problems your bot <span class="highlight">should solve</span></li>
+            <li>Any unique <span class="highlight">visual elements</span> or interaction patterns</li>
+            <li>Any <span class="highlight">additional features</span> or functionality you want to have</li>
+        </ul>
+    </div>
+    <div class="slidey" id="s2">
+        <hr class="slidey-line">
+        <h3><span class="double_slash">//</span>customization <span class="gray-text">- tailored to your very needs</span></h3>
+        <p>Beyond just making your bot flexible, I focus on truly <span class="highlight">customizing</span> it to match your server's tone <span class="highlight">perfectly</span> - whether that's chill, super active, or something else! This means that I take <span class="highlight">a lot of time</span> ensuring your bot's presence (if it has one!) and how it communicates feels <span class="highlight">right at home</span> with your server's aesthetic. Your bot will be truly customized to feel like a <span class="highlight">natural part</span> of your Discord server!</p>
+
+        <h3>What this means for you?</h3>
+        <ul>
+            <li>I might ask a few questions about the <span class="highlight">general theme</span> and <span class="highlight">tone</span> of your server</li>
+            <li>I could also ask about any <span class="highlight">unique features</span> or <span class="highlight">interaction patterns</span> that you want to have</li>
+        </ul>
+    </div>
+    <div class="slidey" id="s3">
+        <hr class="slidey-line">
+        <h3><span class="double_slash">//</span>polish <span class="gray-text">- no extra unnecessary code left</span></h3>
+        <p>An amazing bot isn't just about what it does; it's also about <span class="highlight">how well it's built</span> and <span class="highlight">how it's coded</span>. I take a meticulous approach to <span class="highlight">cleanliness</span> and <span class="highlight">efficiency</span> when it comes to coding behind the scenes! My commitment to polish means I deliver a bot that's not just functional, but also super <span class="highlight">clean</span>, <span class="highlight">efficient</span>, and <span class="highlight">reliable</span>. This means <span class="highlight">tidying up</span> the code, testing everything thoroughly, and <span class="highlight">removing any extra bits</span> that could slow it down or cause hiccups later.</p>
+
+        <h3>For people who are interested in what I use:</h3>
+        <ul>
+            <li>For telegram, I use Python with the <span class="highlight">python-telegram-bot</span> library</li>
+            <li>For discord, I use Python with the <span class="highlight">nextcord</span> library</li>
+        </ul>
+    </div>
+    <div class="slidey" id="footer">
+        <hr class="slidey-line">
+        <h3><span class="double_slash">//</span>contact<span class="gray-text"></span></h3>
+        <p>Here are a few ways you can get in-touch with me:</p>
+        <ul>Discord: <span class="highlight"><span style="user-select: all;">@shinaa.0</span></span></ul>
+        <ul>Email: <span class="highlight"><span style="user-select: all;">shinanoid010@gmail.com</span></span></ul>
+        <ul><a id="git" class="button" href="https://github.com/sekichii">You can also contact me on github here!</ul>
+
     </div>
 </body>
 </html>

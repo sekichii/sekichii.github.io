@@ -6,17 +6,15 @@ body {
     font-family: 'JetBrains Mono';
     transition: background-color 0.125s linear, color 0.15s linear;
     user-select: none;
+    overflow-x: hidden;
 }
 
-#index_body {
-    margin: 0;
-    padding: 0;
-    background-color: #000b14;
-    color: #dfdeda;
-    font-family: 'JetBrains Mono';
-    transition: background-color 0.125s linear, color 0.15s linear;
-    user-select: none;
-    overflow: hidden;
+#top_part {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: fit-content;
+    margin: auto;
 }
 
 a {
@@ -28,19 +26,54 @@ a:hover {
     cursor: pointer;
 }
 
-.double_slash {
+.double_slash { /* span */
     color: #041b38;
-    margin: 0;
 }
 
-.double_slash_container {
+/*.double_slash_container {
     display: flex;
     flex-direction: row;
-}
+}*/
 
 .button_centerer {
     margin: auto;
+    text-align: left;
+    margin-left: 10vw;
 }
+
+
+.slidey {
+    width: calc(100vw - 100px);
+    height: fit-content;
+    position: sticky;
+    background-color: #000b14;
+    top: 0;
+    padding: 5px 50px 100px 50px;
+    transition: background-color 0.125s linear, color 0.15s linear;
+}
+
+.highlight { /* span (highlight in dark mode) */
+    background-color: #ff5733;
+    color: #000b14;
+    font-weight: bolder;
+    padding: 0px 2px 0px 2px;
+}
+
+.slidey-line {
+    width: 100%;
+    color: #041b38;
+}
+
+.gray-text {
+    color: #041b38;
+}
+
+#about_me { z-index: 1; }
+#header { z-index: 2; }
+#s1 { z-index: 3;  }
+#s2 { z-index: 4;  }
+#s3 { z-index: 5;  }
+#footer { z-index: 6; height: 25vh; }
 
 #profile {
     width: 100px;
@@ -48,6 +81,15 @@ a:hover {
     border-radius: 50%;
     margin: 10px auto 10px auto;
     box-shadow: 0px 0px 4px 4px #dfdeda;
+}
+
+#profile_div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
 }
 
 #color_bg { 
