@@ -3,7 +3,7 @@
 .legend
   width: 100%
   display: flex
-  justify-content: end
+  justify-content: space-between
   align-items: center
   background-color: $ctp-crust
   padding: 1rem 0
@@ -12,13 +12,25 @@
   border: solid 1px $ctp-overlay0
   box-shadow: 0 0 0.5rem $ctp-overlay1
 
+  .legend-mention
+    display: flex
+    align-items: center
+    gap: 0.35rem
+
+    a
+      margin: 0 0 0 1rem
+
+    svg
+      display: block
+      margin: 0
+
+  svg
+    fill: $ctp-link
+    width: 24px
+    height: 24px
+
   a
     color: $ctp-link
     font-size: 1.2rem
     font-family: $font-base
     margin: 0 1rem
-
-    svg
-      fill: $ctp-link
-      width: 24px
-      height: 24px
