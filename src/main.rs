@@ -1,27 +1,26 @@
-use yew::prelude::*;
+mod components;
+use components::{
+    legend::AppLegend
+};
+
+use yew::{component, Html, use_state, html};
 
 #[component]
-fn HelloWorld() -> Html {
-    html! { <h1>{ "hi im shina"}</h1> }
-}
-
-#[component]
-fn App() -> Html {
-    let counter = use_state(|| 0);
+pub fn App() -> Html {
+    /*let counter = use_state(|| 0);
     let onclick = {
         let counter = counter.clone();
         move |_| {
             let value = *counter + 1;
             counter.set(value);
         }
-    };
+    };*/
 
     html! {
         <div>
-            <HelloWorld />
-
-            <button {onclick}>{ "+1" }</button>
-            <p>{ *counter }</p>
+            <AppLegend />
+            /*<button {onclick}>{ "+1" }</button>
+            <p>{ *counter }</p>*/
         </div>
     }
 }
