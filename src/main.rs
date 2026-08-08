@@ -1,6 +1,7 @@
 mod components;
 use components::{
-    legend::AppLegend
+    legend::AppLegend,
+    about_me::AboutMe,
 };
 
 use yew::{component, Html, use_state, html};
@@ -19,6 +20,7 @@ pub fn App() -> Html {
     html! {
         <div>
             <AppLegend />
+            <AboutMe />
             /*<button {onclick}>{ "+1" }</button>
             <p>{ *counter }</p>*/
         </div>
