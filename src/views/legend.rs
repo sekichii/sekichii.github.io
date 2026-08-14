@@ -1,9 +1,11 @@
 use yew::{component, Html, use_state, html};
 
-use super::icons::*;
+use crate::components::{
+    icons::{RustIcon, GithubIcon, BlueskyIcon}
+};
 
 #[component]
-pub fn AppLegend() -> Html {
+pub fn Legend() -> Html {
     html! {
         <div class="legend">
             <div class="legend-mention">
@@ -11,11 +13,10 @@ pub fn AppLegend() -> Html {
                 <RustIcon />
             </div>
             <div class="legend-links">
-                <a>{"Games"}</a>
-                <a>
+                <a href="https://github.com/sekichii">
                     <GithubIcon />
                 </a>
-                <a>
+                <a href="https://shina010.bsky.social">
                     <BlueskyIcon />
                 </a>
             </div>
